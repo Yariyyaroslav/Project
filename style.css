@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
+
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../font/Lato-Black.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'LatoReg';
+    src: url('../font/Lato-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoLight';
+    src: url('../font/Lato-Light.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Lato';
+    @apply text-mainText text-[16px];
+}
+
+
+.wrapper {
+    @apply flex flex-col min-h-[100vh] items-center justify-center;
+}
+
+.section {
+    @apply w-full flex flex-col items-center;
+}
+
+.container {
+    @apply flex flex-col gap-[60px] justify-center items-center;
+}
+
+.content {
+    @apply flex flex-col pt-[80px] pb-[80px] 2xl:px-[344px] xl:px-[244px] lg:px-[100px] md:px-[50px] sm:px-[20px] w-full items-center justify-center;
+}
+
+.absolutebg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../img/background.svg') no-repeat;
+    pointer-events: none;
+    background-size: cover;
+}
+
+.absolutebg2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../img/background (1).svg') no-repeat;
+    background-size: cover;
+    pointer-events: none;
+}
+
+.absolutebg3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../img/background\ \(3\).svg') no-repeat;
+    background-size: cover;
+    pointer-events: none;
+}
+
+.dot {
+    position: relative;
+}
+
+.dot::before {
+    content: url('../img/ellipse.svg');
+    position: absolute;
+    left: -10%;
+
+}
+
+li {
+    position: relative;
+    left: 5%;
+}
+
+li::before {
+    position: absolute;
+    content: url('../img/check.svg');
+    left: -5%;
+
+
+}
