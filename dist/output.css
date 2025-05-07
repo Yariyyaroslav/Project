@@ -753,6 +753,10 @@ video {
   list-style-image: url(../img/check.svg);
 }
 
+.list-image-\[url\(\.\/img\/check\.svg\)\] {
+  list-style-image: url(./img/check.svg);
+}
+
 .grid-flow-row-dense {
   grid-auto-flow: row dense;
 }
