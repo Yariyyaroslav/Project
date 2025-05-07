@@ -141,11 +141,11 @@ body {
 }
 
 .container {
-    @apply flex flex-col gap-[60px] justify-center items-center;
+    @apply flex flex-col gap-[60px] justify-center items-center w-full flex-wrap;
 }
 
 .content {
-    @apply flex flex-col pt-[80px] pb-[80px] 2xl:px-[344px] xl:px-[244px] lg:px-[100px] md:px-[50px] sm:px-[20px] w-full items-center justify-center;
+    @apply flex flex-col pt-[80px] pb-[80px] px-[20px] py-[20px] 2xl:px-[344px] xl:px-[244px] lg:px-[100px] md:px-[50px] sm:px-[20px] w-full items-center justify-center;
 }
 
 .absolutebg {
@@ -180,6 +180,16 @@ body {
     background-size: cover;
     pointer-events: none;
 }
+.absolutebg4 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../img/background\ \(4\).svg') no-repeat;
+    background-size: cover;
+    pointer-events: none;
+}
 
 .dot {
     position: relative;
@@ -191,16 +201,6 @@ body {
     left: -10%;
 
 }
-
-li {
-    position: relative;
-    left: 5%;
-}
-
-li::before {
-    position: absolute;
-    content: url('../img/check.svg');
-    left: -5%;
-
-
+h2{
+    width: fit-content;
 }
