@@ -15,9 +15,9 @@ module.exports = {
         bgSecond:'#1E212C',
       },
       screens: {
-        'xs': '340px',
+        'xs': '550px',
         'sm': '760px',
-        'md': '1000px',
+        'md': '987px',
         'lg': '1084px',
         'xl': '1380px',
         '2xl': '1746px',

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="transition-all duration-[.7s] ease-in-out">
+    <!-- <span>https://www.figma.com/design/95jc601EGASj3rOEecbq14/Createx----Copy-?node-id=0-1&p=f&t=j6tDppoX1tKZZZD6-0</span> -->
+    <div class="wrapper">
+        <header class="section relative">
+            <div class="content !pt-[20px]">
+                <div class="container z-[2]">
+                    <nav class="flex gap-[20px] sm:gap-[30px] justify-between items-center w-full">
+                        <div class="flex items-center gap-[30px] 2xl:gap-[60px]"><a href="./index.html"><img
+                                    src="./img/logo.svg" alt="logo"></a>
+                            <div class="gap-[20px] hidden lg:flex 2xl:gap-[40px]">
+                                <a href="./AboutUs.html">About Us</a>
+                                <a class="text-buttonCol" href="./Courses.html">Courses</a>
+                                <a href="#">Events</a>
+                                <a href="#">Blog</a>
+                                <a href="./Contact.html">Contacts</a>
+                            </div>
+                        </div>
+                        <div class="flex gap-[20px] sm:gap-[30px]">
+                            <div class="flex justify-center items-center gap-[20px] sm:gap-[30px] 2xl:gap-[64px]">
+                                <button
+                                    class="bg-buttonCol text-secondText tracking-wider text-[14px] md:text-[16px] font-[LatoReg] hidden xs:block px-[18px] py-[12px] sm:px-[25px] sm:py-[12px] lg:px-[50px] lg:py-[17px] rounded-[5px] ">Get
+                                    consultation</button>
+                                <div class="text-textThird text-center sm:text-left text-[14px] md:text-[16px] w-fit">
+                                    <span>Log in</span>
+                                    /
+                                    <span>Register</span>
+                                </div>
+                            </div>
+                            <img class="block lg:hidden w-[40px]" src="./img/icon/burger_icon_corrected.png" alt="">
+                        </div>
+                    </nav>
+                    <div class="flex flex-col justify-center items-center gap-[8px]">
+                        <span class="text-[16px] tracking-wider uppercase">Enjoy your studying!</span>
+                        <h2>Our online courses</h2>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+                            <div
+                                class="flex flex-col max-w-[390px] items-center shadow-xl bg-white">
+                                <img src="./img/people/image-8.png" alt="">
+                                <div class="flex flex-col gap-[20px] p-[20px] w-full">
+                                    <span
+                                        class="w-fit text-[14px] bg-[#03CEA4] text-secondText px-[10px] py-[5px] rounded-md font-[Latoreg]">Marketing</span>
+                                    <h3 class="leadBold">The Ultimate Google Ads Training Course</h3>
+                                    <div class="flex gap-[8px] text-textForth regular">
+                                    <span class="text-buttonCol regularBold">$100</span>
+                                    |
+                                    <span>by Jerome Bell</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col max-w-[390px] items-center shadow-xl bg-white">
+                                <img src="./img/people/image-7.png" alt="">
+                            <div class="flex flex-col gap-[20px] p-[20px] w-full">
+                                    <span
+                                        class="w-fit text-[14px] bg-[#5A87FC] text-secondText px-[10px] py-[5px] rounded-md font-[Latoreg]">Management</span>
+                                    <h3 class="leadBold">Product Management Fundamentals</h3>
+                                    <div class="flex gap-[8px] text-textForth regular">
+                                    <span class="text-buttonCol regularBold">$480</span>
+                                    |
+                                    <span>by Marvin McKinney</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col max-w-[390px] items-center shadow-xl bg-white">
+                                <img src="./img/people/image-6.png" alt="">
+                            <div class="flex flex-col gap-[20px] p-[20px] w-full">
+                                    <span
+                                        class="w-fit text-[14px] bg-[#F89828] text-secondText px-[10px] py-[5px] rounded-md font-[Latoreg]">HR & Recruting</span>
+                                    <h3 class="leadBold">HR  Management and Analytics</h3>
+                                    <div class="flex gap-[8px] text-textForth regular">
+                                    <span class="text-buttonCol regularBold">$200</span>
+                                    |
+                                    <span>by Leslie Alexander Li</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col max-w-[390px] items-center shadow-xl bg-white">
+                                <img src="./img/people/image-5.png" alt="">
+                            <div class="flex flex-col gap-[20px] p-[20px] w-full">
+                                    <span
+                                        class="w-fit text-[14px] bg-[#03CEA4] text-secondText px-[10px] py-[5px] rounded-md font-[Latoreg]">Marketing</span>
+                                    <h3 class="leadBold">Brand Management & PR Communications</h3>
+                                    <div class="flex gap-[8px] text-textForth regular">
+                                    <span class="text-buttonCol regularBold">$530</span>
+                                    |
+                                    <span>by Kristin Watson</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col max-w-[390px] items-center shadow-xl bg-white">
+                                <img src="./img/people/image-4.png" alt="">
+                            <div class="flex flex-col gap-[20px] p-[20px] w-full">
+                                    <span
+                                        class="w-fit text-[14px] bg-[#F52F6E] text-secondText px-[10px] py-[5px] rounded-md font-[Latoreg]">Design</span>
+                                    <h3 class="leadBold">Graphic Design Basic</h3>
+                                    <div class="flex gap-[8px] text-textForth regular">
+                                    <span class="text-buttonCol regularBold">$500</span>
+                                    |
+                                    <span>by Guy Hawkins</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col max-w-[390px] items-center shadow-xl bg-white">
+                                <img src="./img/people/image-3.png" alt="">
+                            <div class="flex flex-col gap-[20px] p-[20px] w-full">
+                                    <span
+                                        class="w-fit text-[14px] bg-[#5A87FC] text-secondText px-[10px] py-[5px] rounded-md font-[Latoreg]">Management</span>
+                                    <h3 class="leadBold">Business Development Management</h3>
+                                    <div class="flex gap-[8px] text-textForth regular">
+                                    <span class="text-buttonCol regularBold">$400</span>
+                                    |
+                                    <span>by Dianne Russell</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col max-w-[390px] items-center shadow-xl bg-white">
+                                <img src="./img/people/image-2.png" alt="">
+                            <div class="flex flex-col gap-[20px] p-[20px] w-full">
+                                    <span
+                                        class="w-fit text-[14px] bg-[#7772F1] text-secondText px-[10px] py-[5px] rounded-md font-[Latoreg]">Development</span>
+                                    <h3 class="leadBold">Highload Software Architecture</h3>
+                                    <div class="flex gap-[8px] text-textForth regular">
+                                    <span class="text-buttonCol regularBold">$600</span>
+                                    |
+                                    <span>by Brooklyn Simmons</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col max-w-[390px] items-center shadow-xl bg-white">
+                                <img src="./img/people/image-1.png" alt="">
+                            <div class="flex flex-col gap-[20px] p-[20px] w-full">
+                                    <span
+                                        class="w-fit text-[14px] bg-[#F89828] text-secondText px-[10px] py-[5px] rounded-md font-[Latoreg]">HR & Recruting</span>
+                                    <h3 class="leadBold">Human Resources – Selection and Recruitment</h3>
+                                    <div class="flex gap-[8px] text-textForth regular">
+                                    <span class="text-buttonCol regularBold">$150</span>
+                                    |
+                                    <span>by Kathryn Murphy</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col max-w-[390px] items-center shadow-xl bg-white">
+                                <img src="./img/people/image.png" alt="">
+                            <div class="flex flex-col gap-[20px] p-[20px] w-full">
+                                    <span
+                                        class="w-fit text-[14px] bg-[#F52F6E] text-secondText px-[10px] py-[5px] rounded-md font-[Latoreg]">Design</span>
+                                    <h3 class="leadBold">User Experience. Human-centered Design</h3>
+                                    <div class="flex gap-[8px] text-textForth regular">
+                                    <span class="text-buttonCol regularBold">$240</span>
+                                    |
+                                    <span>by Cody Fisher</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </header>
+        <section class="section relative bg-[#F4F5F6]">
+            <div class="content">
+                <div class="container w-full">
+                    <div class="flex flex-col justify-center items-center gap-[8px]">
+                        <span class="text-[16px] tracking-wider uppercase">TESTIMONIALS</span>
+                        <h2>What our students say</h2>
+                    </div>
+                    <div class="swiper max-w-[1020px] shadow-[2px_8px_17px_-8px_rgba(0,0,0,0.75)]">
+                        <div class="swiper-wrapper self-start max-h-[334px] !w-[340px] xs:!w-[540px] sm:!w-[700px] xl:!w-full">
+                            <div class="swiper-slide bg-white rounded-lg">
+                                <div
+                                    class="flex flex-col  justify-center items-center px-[50px] py-[32px] lg:px-[105px] lg:py-[64px]">
+                                    <div class="flex gap-[30px]">
+                                        <img class="self-start hidden sm:block" src="./img/icon/braces.svg" alt="">
+                                        <div class="flex flex-col gap-[24px]">
+                                            <div class="max-h-[150px] overflow-clip">
+                                                <p class="text-textThird lead font-[Latoreg]">
+                                                    Lorem
+                                                    ipsum dolor sit amet,
+                                                    consectetur adipiscing elit. Justo, amet lectus quam
+                                                </p>
+                                                <p class="text-textThird lead font-[Latoreg]">
+                                                    Lorem
+                                                    ipsum dolor sit amet,
+                                                    consectetur adipiscing elit. Justo, amet lectus quam
+                                                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus
+                                                    facilisi.
+                                                    Vitae
+                                                </p>
+                                            </div>
+                                            <div class="flex items-center gap-[20px]"><img class="w-[72px] h-[72px]"
+                                                    src="./img/image (2).png" alt="">
+                                                <div class="flex flex-col gap-[4px]">
+                                                    <h3 class="regular">Eleanor Pena</h3><span
+                                                        class="text-[14px] leading-[150%] text-textForth">Position,
+                                                        Course</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-white  rounded-lg">
+                                <div
+                                    class="flex flex-col  justify-center items-center px-[50px] py-[32px] lg:px-[105px] lg:py-[64px]">
+                                    <div class="flex gap-[30px]">
+                                        <img class="self-start hidden sm:block" src="./img/icon/braces.svg" alt="">
+                                        <div class="flex flex-col gap-[24px]">
+                                            <div class="max-h-[150px] overflow-clip">
+                                                <p class="text-textThird lead font-[Latoreg]">
+                                                    Lorem
+                                                    ipsum dolor sit amet,
+                                                    consectetur adipiscing elit. Justo, amet lectus quam
+                                                </p>
+                                                <p class="text-textThird lead font-[Latoreg]">
+                                                    Lorem
+                                                    ipsum dolor sit amet,
+                                                    consectetur adipiscing elit. Justo, amet lectus quam
+                                                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus
+                                                    facilisi.
+                                                    Vitae
+                                                </p>
+                                            </div>
+                                            <div class="flex items-center gap-[20px]"><img class="w-[72px] h-[72px]"
+                                                    src="./img/people/Profile Picture.png" alt="">
+                                                <div class="flex flex-col gap-[4px]">
+                                                    <h3 class="regular">Edison</h3><span
+                                                        class="text-[14px] leading-[150%] text-textForth">Position,
+                                                        Course</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-white  rounded-lg ">
+                                <div
+                                    class="flex flex-col  justify-center items-center px-[50px] py-[32px] lg:px-[105px] lg:py-[64px]">
+                                    <div class="flex gap-[30px]">
+                                        <img class="self-start hidden sm:block" src="./img/icon/braces.svg" alt="">
+                                        <div class="flex flex-col gap-[24px]">
+                                            <div class="max-h-[150px] overflow-clip">
+                                                <p class="text-textThird lead font-[Latoreg]">
+                                                    Lorem
+                                                    ipsum dolor sit amet,
+                                                    consectetur adipiscing elit. Justo, amet lectus quam
+                                                </p>
+                                                <p class="text-textThird lead font-[Latoreg]">
+                                                    Lorem
+                                                    ipsum dolor sit amet,
+                                                    consectetur adipiscing elit. Justo, amet lectus quam
+                                                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus
+                                                    facilisi.
+                                                    Vitae
+                                                </p>
+                                            </div>
+                                            <div class="flex items-center gap-[20px]"><img class="w-[72px] h-[72px]"
+                                                    src="./img/people/e13c858b268346baa05e48654927f03c.png" alt="">
+                                                <div class="flex flex-col gap-[4px]">
+                                                    <h3 class="regular">Max</h3><span
+                                                        class="text-[14px] leading-[150%] text-textForth">Position,
+                                                        Course</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section relative">
+            <div class="content">
+                <div class="container z-[2]">
+                    <div class="flex flex-col sm:flex-row gap-[30px] sm:gap-[50px] lg:gap-[135px] w-full justify-center items-center">
+                        <div
+                            class="flex flex-col items-center sm:items-start gap-[30px] text-center sm:text-left basis-full sm:basis-1/2">
+                            <div class="flex flex-col justify-center items-center sm:items-start gap-[8px]">
+                                <span class="text-[16px] tracking-wider uppercase">Createx Certificate</span>
+                                <h2>Your expertise will be confirmed
+                                </h2>
+                            </div>
+                            <p class="regular tracking-wider text-textThird  ">We are
+                                accredited by international professional organizations and institutes:</p>
+                            <img src="./img/icon/logos.svg" alt="logos">
+                        </div>
+                        <img class="shadow-[1px_10px_39px_-15px_rgba(0,0,0,0.75)] max-w-[340px] xs:max-w-[400px] md:max-w-[500px] lg:max-w-[705px]" src="./img/certif.png"
+                                alt="Certificate">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section relative">
+            <div class="absolutebg4"></div>
+            <div class="content !pt-[120px] !pb-[180px]">
+                <div class="container z-[2]">
+                    <div class="flex flex-col justify-center items-center gap-[8px] text-center">
+                        <span class="text-[20px] tracking-wider uppercase">Don’t miss anything</span>
+                        <h2 class="max-w-[810px]">Subscribe to the Createx
+                            School
+                            announcements</h2>
+                    </div>
+                    <form class="max-w-[600px] w-full flex flex-col sm:flex-row gap-[24px]" action="">
+                        <input class="w-full px-[50px] py-[20px] pl-[15px] rounded-md" type="email"
+                            placeholder="Your working email">
+                        <input
+                            class="text-secondText px-[50px] py-[20px] text-[18px] text-center bg-buttonCol rounded-[5px] hover:border-buttonCol hover:bg-transparent hover:border-[2px] border-solid hover:text-buttonCol hover:py-[18px] hover:px-[48px]"
+                            type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="section relative bg-bgSecond">
+            <div class="content">
+                <div class="container z-[2]">
+                    <div
+                        class="flex flex-col justify-center items-center md:items-start md:flex-row w-full gap-[30px] lg:gap-[80px] font-[Latoreg]">
+                        <div
+                            class="flex flex-col justify-evenly items-center text-center md:text-left md:justify-between gap-[30px] basis-1/4">
+                            <img class="self-center md:self-start max-w-[130px]" src="./img/logo (1).svg" alt="">
+                            <p
+                                class="text-textForth text-[14px] font-[Latoreg] leading-[150%] max-h-[100px] overflow-y-auto">
+                                Createx Online School is a leader in online studying. We have lots of courses and
+                                programs from the main market experts. We provide relevant approaches to online
+                                learning, internships and employment in the largest companies in the country. </p>
+                            <img class="max-w-[150px]" src="./img/socials (1).png" alt="">
+                        </div>
+                        <div
+                            class="flex flex-col sm:flex-row basis-2/4 justify-center text-center md:text-left gap-[30px] lg:gap-[80px]">
+                            <div class="flex flex-col gap-[8px]">
+                                <span class="text-secondText leadBold">SITE MAP</span>
+                                <ul class="flex flex-col gap-[12px] !text-textForth regular">
+                                    <li>About Us</li>
+                                    <li>Courses</li>
+                                    <li>Events</li>
+                                    <li>Blog</li>
+                                    <li>Contacts</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-col gap-[8px]">
+                                <span class="text-secondText leadBold">COURSES</span>
+                                <ul class="flex flex-col gap-[12px] !text-textForth regular">
+                                    <li>Marketing</li>
+                                    <li>Management</li>
+                                    <li>HR & Recruting</li>
+                                    <li>Design</li>
+                                    <li>Development</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-col gap-[8px]">
+                                <span class="text-secondText leadBold">CONTACT US</span>
+                                <ul class="flex flex-col gap-[12px] !text-textForth regular">
+                                    <li>(405) 555-0128</li>
+                                    <li>hello@createx.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="basis-1/4 flex flex-col gap-[24px] ">
+                            <h2 class=" text-secondText uppercase text-[16px]">SIGN UP TO OUR NEWSLETTER</h2>
+                            <form action="">
+                                <input class="bg-textThird py-[9px] px-[12px] rounded-md w-full" type="email"
+                                    placeholder="Email address">
+                            </form>
+                            <p class="text-white text-[12px] leading-[150%]">*Subscribe to our newsletter to receive
+                                communications and early updates from Createx SEO Agency.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        });
+    </script>
+
+</body>
+
+</html>

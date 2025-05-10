@@ -128,7 +128,7 @@ h6 {
 
 body {
     font-family: 'Lato';
-    @apply text-mainText text-[16px];
+    @apply text-mainText min-w-[370px] text-[16px];
 }
 
 
@@ -141,11 +141,27 @@ body {
 }
 
 .container {
-    @apply flex flex-col gap-[60px] justify-center items-center w-full flex-wrap;
+    @apply flex flex-col gap-[60px] max-w-[1230px] justify-center items-center w-full flex-wrap;
 }
 
 .content {
-    @apply flex flex-col pt-[80px] pb-[80px] px-[20px] py-[20px] 2xl:px-[344px] xl:px-[244px] lg:px-[100px] md:px-[50px] sm:px-[20px] w-full items-center justify-center;
+    @apply flex flex-col pt-[50px] pb-[50px] lg:pt-[80px] lg:pb-[80px] px-[30px] py-[20px] 2xl:px-[344px] xl:px-[200px] lg:px-[100px] md:px-[50px] sm:px-[20px] w-full items-center justify-center;
+}
+
+.regular {
+    @apply text-[14px] lg:text-[16px] leading-[160%] font-[Latoreg] text-textThird;
+}
+
+.regularBold {
+    @apply text-[16px] leading-[160%] font-[Lato];
+}
+
+.leadBold {
+    @apply text-[16px] sm:text-[18px] xl:text-[20px] leading-[150%] font-[Lato];
+}
+
+.lead {
+    @apply text-[14px] sm:text-[16px] xl:text-[20px] leading-[150%] font-[Latoreg];
 }
 
 .absolutebg {
@@ -180,6 +196,7 @@ body {
     background-size: cover;
     pointer-events: none;
 }
+
 .absolutebg4 {
     position: absolute;
     top: 0;
@@ -201,6 +218,8 @@ body {
     left: -10%;
 
 }
-h2{
+
+h2 {
     width: fit-content;
+    @apply text-[28px] sm:text-[36px] md:text-[46px] leading-[130%];
 }
