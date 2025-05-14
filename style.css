@@ -223,3 +223,62 @@ h2 {
     width: fit-content;
     @apply text-[28px] sm:text-[36px] md:text-[46px] leading-[130%];
 }
+
+.accordion {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    transition: 0.4s;
+}
+
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion::before {
+    content: '+';
+    font-size: 23px;
+    color: #FF3F3A;
+    padding-right: 10px;
+}
+
+.active::before {
+    content: '-';
+}
+
+.button {
+    position: relative;
+    background: #FF3F3A;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: var(--y, 50%);
+    left: var(--x, 50%);
+    transform: translate(-50%, -50%);
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255, 166, 0, 0.7), transparent 40%);
+    opacity: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.button:hover::before {
+    opacity: 1;
+}
+
+.button span {
+    position: relative;
+    z-index: 1;
+}

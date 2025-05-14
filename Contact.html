@@ -27,17 +27,18 @@
                             </div>
                         </div>
                         <div class="flex gap-[20px] sm:gap-[30px]">
-                        <div class="flex justify-center items-center gap-[20px] sm:gap-[30px] 2xl:gap-[64px]">
-                            <button
-                                class="bg-buttonCol text-secondText tracking-wider text-[14px] md:text-[16px] font-[LatoReg] hidden xs:block px-[18px] py-[12px] sm:px-[25px] sm:py-[12px] lg:px-[50px] lg:py-[17px] rounded-[5px] ">Get
-                                consultation</button>
-                            <div class="text-textThird text-center sm:text-left text-[14px] md:text-[16px] w-fit">
-                                <span>Log in</span>
-                                /
-                                <span>Register</span>
+                            <div class="flex justify-center items-center gap-[20px] sm:gap-[30px] 2xl:gap-[64px]">
+                                <button
+                                    class="bg-buttonCol text-secondText tracking-wider text-[14px] md:text-[16px] font-[LatoReg] hidden xs:block px-[18px] py-[12px] sm:px-[25px] sm:py-[12px] lg:px-[50px] lg:py-[17px] rounded-[5px] ">Get
+                                    consultation</button>
+                                <div class="text-textThird text-center sm:text-left text-[14px] md:text-[16px] w-fit">
+                                    <span>Log in</span>
+                                    /
+                                    <span>Register</span>
+                                </div>
                             </div>
+                            <img class="block lg:hidden w-[40px]" src="./img/icon/burger_icon_corrected.png" alt="">
                         </div>
-                        <img class="block lg:hidden w-[40px]" src="./img/icon/burger_icon_corrected.png" alt=""></div>
                     </nav>
                     <div
                         class="flex w-full justify-between flex-col lg:flex-row items-center gap-[50px] 2xl:gap-[165px]">
@@ -92,12 +93,12 @@
         </header>
         <section class="section relative">
             <div class="content">
-                <div class="container z-[2]">
+                <div class="container z-[2] !max-w-[1248px]">
                     <div
                         class="flex w-full justify-between flex-col lg:flex-row items-center gap-[50px] 2xl:gap-[108px]">
-                        <img class="hidden lg:block max-w-[400px] xl:max-w-[500px] w-full"
-                            src="../img/illustration (4).svg" alt="">
-                        <div class="flex flex-col w-full gap-[48px] basis-[100%] lg:basis-[70%]">
+                        <img class="hidden lg:block max-w-[400px] xl:max-w-[435px] w-full"
+                            src="./img/illustration (4).svg" alt="">
+                        <div class="flex flex-col w-full gap-[48px] max-w-[705px]">
                             <div class="flex flex-col items-left gap-[8px]">
                                 <span class="text-[16px] tracking-wider uppercase">Any questions?</span>
                                 <h2>Drop us a line</h2>
@@ -142,6 +143,11 @@
                                             name="area" id="area" placeholder="Your message" rows="5"></textarea>
                                     </div>
                                 </div>
+                                <div class="flex flex-col gap-[25px] items-center w-full justify-between xs:flex-row">
+                                    <div class="w-full max-w-[340px] flex items-start"><input type="checkbox" class="accent-buttonCol" checked><p class="pl-[5px]">I agree to receive communications from Createx Online School</p></div>
+                                    <input  type="submit" value="Send message"
+                                        class="w-full max-w-[340px] flex flex-col gap-[8px] bg-buttonCol max-h-[44px] text-secondText tracking-wider text-[14px] leading-[41px] font-[LatoReg] xs:block px-[18px] sm:px-[25px] lg:px-[32px] rounded-[5px] ">
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -167,8 +173,7 @@
                             class="flex flex-col sm:flex-row basis-2/4 justify-center text-center md:text-left gap-[30px] lg:gap-[80px]">
                             <div class="flex flex-col gap-[8px]">
                                 <span class="text-secondText leadBold">SITE MAP</span>
-                                <ul
-                                    class="flex flex-col gap-[12px] !text-textForth regular">
+                                <ul class="flex flex-col gap-[12px] !text-textForth regular">
                                     <li>About Us</li>
                                     <li>Courses</li>
                                     <li>Events</li>
@@ -178,8 +183,7 @@
                             </div>
                             <div class="flex flex-col gap-[8px]">
                                 <span class="text-secondText leadBold">COURSES</span>
-                                <ul
-                                    class="flex flex-col gap-[12px] !text-textForth regular">
+                                <ul class="flex flex-col gap-[12px] !text-textForth regular">
                                     <li>Marketing</li>
                                     <li>Management</li>
                                     <li>HR & Recruting</li>
@@ -189,8 +193,7 @@
                             </div>
                             <div class="flex flex-col gap-[8px]">
                                 <span class="text-secondText leadBold">CONTACT US</span>
-                                <ul
-                                    class="flex flex-col gap-[12px] !text-textForth regular">
+                                <ul class="flex flex-col gap-[12px] !text-textForth regular">
                                     <li>(405) 555-0128</li>
                                     <li>hello@createx.com</li>
                                 </ul>
