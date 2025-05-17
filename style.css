@@ -273,12 +273,45 @@ h2 {
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
+.buttonT {
+    position: relative;
+    background: transparent;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
 
+.buttonT::before {
+    content: '';
+    position: absolute;
+    top: var(--y, 50%);
+    left: var(--x, 50%);
+    transform: translate(-50%, -50%);
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, #ffabab, transparent 40%);
+    opacity: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
 .button:hover::before {
+    opacity: 1;
+}
+.buttonT:hover::before {
     opacity: 1;
 }
 
 .button span {
     position: relative;
     z-index: 1;
+}
+.buttonT span {
+    position: relative;
+    z-index: 1;
+}
+.scrol::-webkit-scrollbar{
+    @apply bg-transparent w-[5px];
+}
+.scrol::-webkit-scrollbar-thumb{
+    @apply bg-textThird rounded-xl;
 }
