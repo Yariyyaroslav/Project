@@ -28,9 +28,9 @@
                         </div>
                         <div class="flex gap-[20px] sm:gap-[30px]">
                             <div class="flex justify-center items-center gap-[20px] sm:gap-[30px] 2xl:gap-[64px]">
-                                <button
-                                    class="bg-buttonCol text-secondText tracking-wider text-[14px] md:text-[16px] font-[LatoReg] hidden xs:block px-[18px] py-[12px] sm:px-[25px] sm:py-[12px] lg:px-[50px] lg:py-[17px] rounded-[5px] ">Get
-                                    consultation</button>
+                                <a href=""
+                                    class="bg-buttonCol glow-button button text-secondText tracking-wider text-[14px] md:text-[16px] font-[LatoReg] hidden xs:block px-[18px] py-[12px] sm:px-[25px] sm:py-[12px] lg:px-[50px] lg:py-[17px] rounded-[5px] "><span>Get
+                                        consultation</span></a>
                                 <div class="text-textThird text-center sm:text-left text-[14px] md:text-[16px] w-fit">
                                     <span>Log in</span>
                                     /
@@ -231,7 +231,17 @@
             }
         });
     </script>
-
+<script>
+        document.querySelectorAll('.glow-button').forEach(button => {
+            button.addEventListener('mousemove', (e) => {
+                const rect = button.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                button.style.setProperty('--x', `${x}px`);
+                button.style.setProperty('--y', `${y}px`);
+            });
+        });
+    </script>
 </body>
 
 </html>
