@@ -668,6 +668,10 @@ video {
   max-height: 44px;
 }
 
+.max-h-\[82px\] {
+  max-height: 82px;
+}
+
 .min-h-\[300px\] {
   min-height: 300px;
 }
@@ -678,6 +682,11 @@ video {
 
 .\!w-\[340px\] {
   width: 340px !important;
+}
+
+.\!w-fit {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
 }
 
 .w-\[20px\] {
@@ -805,6 +814,10 @@ video {
   max-width: 100%;
 }
 
+.\!max-w-\[340px\] {
+  max-width: 340px !important;
+}
+
 .basis-1\/2 {
   flex-basis: 50%;
 }
@@ -853,10 +866,6 @@ video {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.list-image-\[url\(\.\.\/img\/check\.svg\)\] {
-  list-style-image: url(../img/check.svg);
 }
 
 .grid-flow-row-dense {
@@ -991,6 +1000,10 @@ video {
   gap: 8px;
 }
 
+.gap-\[\] {
+  gap: ;
+}
+
 .gap-x-\[30px\] {
   -moz-column-gap: 30px;
        column-gap: 30px;
@@ -1008,8 +1021,20 @@ video {
   align-self: center;
 }
 
+.justify-self-center {
+  justify-self: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-clip {
   overflow: clip;
+}
+
+.overflow-scroll {
+  overflow: scroll;
 }
 
 .overflow-y-auto {
@@ -1180,11 +1205,6 @@ video {
   padding-right: 50px;
 }
 
-.px-\[60px\] {
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
 .px-\[74px\] {
   padding-left: 74px;
   padding-right: 74px;
@@ -1225,6 +1245,11 @@ video {
   padding-bottom: 20px;
 }
 
+.py-\[28px\] {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
 .py-\[32px\] {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -1235,11 +1260,6 @@ video {
   padding-bottom: 40px;
 }
 
-.py-\[48px\] {
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
 .py-\[5px\] {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -1248,6 +1268,11 @@ video {
 .py-\[9px\] {
   padding-top: 9px;
   padding-bottom: 9px;
+}
+
+.py-\[22px\] {
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .\!pb-\[143px\] {
@@ -1296,6 +1321,10 @@ video {
 
 .pt-\[50px\] {
   padding-top: 50px;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -1632,7 +1661,13 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 40px;
+}
+
+@media (min-width: 1084px) {
+  .container {
+    gap: 60px;
+  }
 }
 
 .content {
@@ -1815,7 +1850,8 @@ h2 {
 
 .accordion {
   cursor: pointer;
-  padding: 18px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   width: 100%;
   text-align: left;
   transition: 0.4s;
@@ -1911,6 +1947,17 @@ h2 {
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(66 69 81 / var(--tw-bg-opacity));
+}
+
+.sccrol::-webkit-scrollbar {
+  width: 2px;
+  background-color: transparent;
+}
+
+.sccrol::-webkit-scrollbar-thumb {
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 122 128 / var(--tw-bg-opacity));
 }
 
 .hover\:z-\[2\]:hover {
@@ -2204,6 +2251,10 @@ h2 {
     display: none;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:max-w-\[495px\] {
     max-width: 495px;
   }
@@ -2264,6 +2315,10 @@ h2 {
     gap: 80px;
   }
 
+  .lg\:gap-\[60px\] {
+    gap: 60px;
+  }
+
   .lg\:px-\[105px\] {
     padding-left: 105px;
     padding-right: 105px;
@@ -2279,9 +2334,24 @@ h2 {
     padding-right: 50px;
   }
 
+  .lg\:px-\[60px\] {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
   .lg\:py-\[17px\] {
     padding-top: 17px;
     padding-bottom: 17px;
+  }
+
+  .lg\:py-\[20px\] {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .lg\:py-\[48px\] {
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   .lg\:py-\[64px\] {
@@ -2289,16 +2359,42 @@ h2 {
     padding-bottom: 64px;
   }
 
+  .lg\:px-\[95px\] {
+    padding-left: 95px;
+    padding-right: 95px;
+  }
+
+  .lg\:py-\[54px\] {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
   .lg\:\!pb-\[0\] {
     padding-bottom: 0 !important;
+  }
+
+  .lg\:\!pb-\[180px\] {
+    padding-bottom: 180px !important;
   }
 
   .lg\:\!pt-\[0px\] {
     padding-top: 0px !important;
   }
 
+  .lg\:\!pt-\[120px\] {
+    padding-top: 120px !important;
+  }
+
+  .lg\:\!pt-\[166px\] {
+    padding-top: 166px !important;
+  }
+
   .lg\:text-left {
     text-align: left;
+  }
+
+  .lg\:text-\[28px\] {
+    font-size: 28px;
   }
 
   .lg\:text-\[32px\] {
@@ -2341,6 +2437,14 @@ h2 {
 
   .xl\:gap-\[180px\] {
     gap: 180px;
+  }
+
+  .xl\:gap-\[20px\] {
+    gap: 20px;
+  }
+
+  .xl\:gap-\[40px\] {
+    gap: 40px;
   }
 
   .xl\:px-\[105px\] {

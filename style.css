@@ -142,7 +142,7 @@ body {
 }
 
 .container {
-    @apply flex flex-col gap-[60px] max-w-[1230px] justify-center items-center w-full flex-wrap;
+    @apply flex flex-col gap-[40px] lg:gap-[60px] max-w-[1230px] justify-center items-center w-full flex-wrap;
 }
 
 .content {
@@ -227,7 +227,8 @@ h2 {
 
 .accordion {
     cursor: pointer;
-    padding: 18px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     width: 100%;
     text-align: left;
     transition: 0.4s;
@@ -315,4 +316,10 @@ h2 {
 }
 .scrol::-webkit-scrollbar-thumb{
     @apply bg-textThird rounded-xl;
+}
+.sccrol::-webkit-scrollbar{
+    @apply bg-transparent w-[2px];
+}
+.sccrol::-webkit-scrollbar-thumb{
+    @apply bg-textForth rounded-xl;
 }
